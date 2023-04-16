@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Página con iframe</title>
+</head>
+<body>
+	<h1>Esta es la página principal</h1>
+	<p>La siguiente sección muestra una página dentro de un iframe:</p>
+	<iframe id="myframe" width="100%" height="500px" src=""></iframe>
+
+	<script>
+		// Función para cargar la página dentro del iframe
+		function loadPage(url) {
+			// Seleccionamos el iframe y cambiamos su atributo "src"
+			var iframe = document.getElementById("myframe");
+			iframe.src = url;
+		}
+	</script>
+
+	<!-- Ejemplo de enlace para cargar una página dentro del iframe -->
+	<p><a href="#" onclick="loadPage('https://www.amazon.es/Lotvic-Interactivo-Inteligente-Autogiratoria-Recargable/dp/B0BV1ZXXC9?psc=1&linkCode=ll1&tag=pretimeshoppe-21&linkId=ebdcdefbbaf35f58455e3444aa5f3928&language=es_ES&ref_=as_li_ss_tl')">Cargar Google dentro del iframe</a></p>
+</body>
+</html>
